@@ -1,17 +1,18 @@
 {
   "name": "joy",
-  "productName": "joy",
+  "productName": "Joy",
   "version": "0.0.1",
-  "description": "Productivity app for developers",
+  "description": "Productivity Application for Developers.",
   "main": "main.js",
   "scripts": {
-    "start": "electron ."
+    "start": "electron .",
+    "build": "electron-builder -m"
   },
   "author": "Divyanshu, Angel, Jenil",
   "license": "MIT",
-  "dependencies": {
+  "devDependencies": {
     "electron": "^26.2.1",
-    "resize-img": "^2.0.0",
+    "electron-builder": "^24.6.4",
     "toastify-js": "^1.12.0"
   }
 }

@@ -39,6 +39,8 @@ html{
 */
 body{
     margin: 0;
+    /* height: 100vh; */
+    display: flex;
     line-height: inherit;
     overflow: hidden;
     background: #190019;
@@ -692,4 +694,16 @@ video {
 
 .focus\:ring-offset-2:focus {
   --tw-ring-offset-width: 2px;
+}
+
+.mainDiv{
+  margin: 8.5vh 8.5%;
+  background-color: inherit;
+  padding: 2%;
+}
+
+.clockDiv{
+  /* margin: 2vh 2vw; */
+  background-color: inherit;
+  padding: 0.5%;
 }
