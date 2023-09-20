@@ -39,7 +39,7 @@ html{
 */
 body{
     margin: 0;
-    /* height: 100vh; */
+    height: 100vh;
     display: flex;
     line-height: inherit;
     overflow: hidden;
@@ -705,5 +705,5 @@ video {
 .clockDiv{
   /* margin: 2vh 2vw; */
   background-color: inherit;
-  padding: 0.5%;
+  padding: 2%;
 }

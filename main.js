@@ -9,7 +9,9 @@ function createMainWindow(){
     const mainWindow = new BrowserWindow({
         title: 'Joy',
         width: isDev ? 1920 : 1280,
-        height: isDev ? 1080 : 720
+        height: isDev ? 1080 : 720,
+        minHeight: 400,
+        minWidth: 400,
     });
 
     // Open Dev Tools If in Dev Env
@@ -18,7 +20,7 @@ function createMainWindow(){
     }
 
     mainWindow.loadFile(path.join(__dirname, './renderer/index.html'));
-}
+    }
 app.whenReady().then(()=> {
     createMainWindow();
 
@@ -73,7 +75,7 @@ const menu = [
                     },
                 ]
                 : []),
-]
+];
 
 app.on('window-all-closed', ()=>{
     if (!isMac) {
