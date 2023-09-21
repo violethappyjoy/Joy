@@ -8,10 +8,10 @@ const isMac = process.platform === 'darwin';
 function createMainWindow(){
     const mainWindow = new BrowserWindow({
         title: 'Joy',
-        width: isDev ? 1920 : 1280,
+        width: isDev ? 1728 : 1152,
         height: isDev ? 1080 : 720,
-        minHeight: 400,
-        minWidth: 400,
+        minHeight: 420,
+        minWidth: 672,
     });
 
     // Open Dev Tools If in Dev Env
