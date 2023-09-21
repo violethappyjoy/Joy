@@ -17,9 +17,44 @@
                 <p class="leftText">Good Afternoon!</p><p>Hello Right</p>
             </div>
             <div class="clockDiv">
-                <p class="clkText">12:00 </p>
+                <p id="clock" class="clkText"></p>
+                
             </div>
+            <script>
+                function clock(){
+                    var date=new Date();
+                    var hours=date.getHours();
+                    var minutes=date.getMinutes();
+                    hours=updateTime(hours);
+                    minutes=updateTime(minutes);
+                
+                    document.getElementById("clock").innerHTML=hours+":"+minutes;
+                    var time=setTimeout(function(){
+                        clock();
+                        },1000);
+                    <!-- if(hours<12){
+                        var greeting="Good Morning";
+                    }
+                    if(hours>=12 && hours<18){
+                        var greeting="Good Afternoon";
+                    }
+                    if(hours>=18 && hours<=24){
+                        var greeting="Good Evening";
+                    }
+                    document.getElementById("greeting").innerHTML=greeting; -->
+                }
+                function updateTime(k){
+                    if(k<10){
+                        return "0"+k;
+                    }
+                    else{
+                        return k;
+                    }
+                }
+                clock();
+            </script>
         </div>
+        
         <!-- <h1>Hello!</h1> -->
     </body>
 </html>
