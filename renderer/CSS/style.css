@@ -40,7 +40,7 @@ html{
 body{
     margin: 0;
     height: 100vh;
-    display: flex;
+    /* display: flex; */
     line-height: inherit;
     overflow: hidden;
     background: #190019;
@@ -698,13 +698,46 @@ video {
 }
 
 .mainDiv{
-  margin: 8.5vh 8.5%;
-  background-color: inherit;
-  padding: 2%;
+  display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    align-self: center;
+    margin: 8% 8%;
+    background-color: inherit;
+    padding: 2%;
+}
+
+.topDiv {
+  display: flex;
+  justify-content: space-between;
+  /* width: 100%; */
 }
 
 .clockDiv{
-  /* margin: 2vh 2vw; */
+  /* margin-top: 0; */
   background-color: inherit;
-  padding: 2%;
+  color: #fbe4d6;
+  font-size: 81px;
+  font-weight: 400;
+  line-height: 50px;
+}
+.leftText{
+  font-size: 28px;
+  text-align: left;
+  margin: 0;
+}
+
+.clkText {
+  margin: 0;
+  text-align: left;
+  /* float: left; */
+  font-size: 81px;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.topDiv {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
 }
